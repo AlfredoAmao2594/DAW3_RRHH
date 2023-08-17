@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="base(titulo, contenido)">
+<head th:insert="~{fragments :: head(${titulo})}">
+</head>
+<body>
+    <div th:insert="~{fragments :: header}"></div>
+    <main th:insert="${contenido}"></main>
+</body>
+</html>

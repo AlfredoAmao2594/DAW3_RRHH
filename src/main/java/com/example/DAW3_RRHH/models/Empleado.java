@@ -15,16 +15,16 @@ public class Empleado {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "id")
-   private Integer id;
-   
-   private String nombre;
-   private String apellido;
-   private Integer salario;
-   private String puesto;
+   Integer id;
+    
+   String nombre;
+   String apellido;
+   Integer salario;
+   String puesto;
 
    @CreationTimestamp
    @Column(name = "fecha")
-   private LocalDateTime fecha;
+   LocalDateTime fecha;
 
    public Empleado(){}
 
@@ -84,5 +84,6 @@ public void setFecha(LocalDateTime fecha) {
     this.fecha = fecha;
 }
 
+   
    
 }
